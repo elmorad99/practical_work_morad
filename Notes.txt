@@ -1,0 +1,33 @@
+====================================================================================================================================================
+23.10.2023
+====================================================================================================================================================
+
+My dataset: tox21
+My method:  frequent hitter model
+
+Todo:
+- environment install
+- low data drug discovery paper lesen
+- fingerprints & despriptors ausrechnen
+- concatenate 
+- normalize between 0 and 1
+
+====================================================================================================================================================
+18.12.2023
+====================================================================================================================================================
+
+- read 3 Papers
+- read in the paper how the tvt splits are created
+- "FAIL" and unknown molecules have to be removed
+- Quantiles are supposed to fix the descriptors outliers
+- First calculate quantiles, then concatenate (fingerprints + quantiles), then normalize X ~ N(0,1)
+- Fingerprint function is already good
+- Quantiles are calculated seperately for train, validation and test splits
+	- rdkit_descriptors is either train, validation or test
+	- descriptors_raw_forECDF is always the train descriptors
+- scaler.transform() StandardScaler used for normalizing, but what about .fit()?
+
+====================================================================================================================================================
+dd.02.2024
+====================================================================================================================================================
+
