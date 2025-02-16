@@ -1,1 +1,3 @@
-# practical_work_morad
+# Practical Work in AI
+## Abdulaziz Morad
+## 11942094
